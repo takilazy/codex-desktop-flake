@@ -5,17 +5,17 @@
 
   outputs = { self, nixpkgs }:
     let
-      version = "26.1023.50603";
+      version = "26.1023.51421";
       systems = [ "x86_64-linux" "aarch64-linux" ];
       forAllSystems = nixpkgs.lib.genAttrs systems;
       debs = {
         x86_64-linux = {
           arch = "amd64";
-          hash = "sha256-9cm/Lwo9UME5F69hGFp5H1IOWDmQn+qCLYhr41sSGyY=";
+          hash = "sha256-RITcK1T8CXi+sjuNjXF0lOTgtPvqsKh2c5EF5QtE3lo=";
         };
         aarch64-linux = {
           arch = "arm64";
-          hash = "sha256-hdWyJEOpXfQcPW0UmnMuomDprMrb3v5GutkmRRMG6Jw=";
+          hash = "sha256-50eNhPKTjdNz+mHFKw8gCwfWEOSJRwUr2K10dpt/0/s=";
         };
       };
     in {
